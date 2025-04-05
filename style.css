@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    /*background-color: #000;*/
+    background-image: url('imgs/fundo2.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .photo-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+  
+  .photo {
+    width: 100%;
+    border-radius: 20px;
+  }
+  
+  .hearts {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .heart {
+    position: absolute;
+    color: #ff5e79;
+    font-size: 24px;
+    animation: float 4s linear infinite;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(100%);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+  }
+  
+  .text h1 {
+    margin-top: 20px;
+    font-size: 28px;
+  }
+  
+  .text p {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+
+  .mensagem{
+    margin-top: 22px;
+  }
+
+  .texto-formatado {
+    text-align: center;        /* centraliza o texto */
+    font-family: Arial, sans-serif; /* troca a fonte monoespaçada */
+    white-space: pre-wrap;     /* mantém quebras de linha e quebra se passar da tela */
+    margin: 20px auto;         /* centraliza o bloco */
+    width: fit-content;        /* faz o bloco se ajustar ao conteúdo */
+    line-height: 1.6;          /* espaçamento entre linhas */
+    color: #fff;               /* opcional: cor do texto */
+  }
+  
+  .linha {
+    height: 1px;
+    background-color: white;
+    width: 85%;
+    margin: 20px auto;
+    opacity: 80%;
+  }
+
+  .bloco-namoro {
+    text-align: center;
+    /*background-color: #d9ece9; /* cor de fundo parecida */
+    padding: 20px;
+    border-radius: 10px;
+    width: fit-content;
+    margin: 20px auto;
+    margin-top: -40px;
+  }
+  
+  .bloco-namoro h2 {
+    font-size: 28px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .timer-estilo {
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+  }
+  
+  /* Animação para piscar as interrogações */
+  .pisca {
+    animation: piscar 1s infinite;
+    color: #ff4444;
+  }
+  
+  @keyframes piscar {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
