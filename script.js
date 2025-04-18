@@ -36,3 +36,23 @@ function createHeart() {
 }
 
 setInterval(createHeart, 500);
+
+function toggleLetter() {
+  const popup = document.getElementById('letterPopup');
+  const icon = document.getElementById('envelopeIcon');
+  popup.classList.toggle('open');
+  icon.classList.toggle('open');
+}
+
+const envelope = document.querySelector('.envelope-icon');
+  const popup = document.querySelector('.letter-popup');
+
+  envelope.addEventListener('click', () => {
+    envelope.classList.add('open');
+    popup.classList.add('open');
+  });
+
+  function closeLetter() {
+    envelope.classList.remove('open');
+    popup.classList.remove('open');
+  }
